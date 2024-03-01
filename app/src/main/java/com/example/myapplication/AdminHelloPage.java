@@ -39,7 +39,7 @@ public class AdminHelloPage extends AppCompatActivity {
         createBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),AdminInsertproducts.class);
+                Intent intent = new Intent(getApplicationContext(),AdminProductsInserts.class);
                 startActivity(intent);
                 finish();
             }

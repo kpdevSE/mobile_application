@@ -57,7 +57,13 @@ public class AdminLoginPage extends AppCompatActivity {
 
                 if (adminE.isEmpty() || adminP.isEmpty()){
                     Toast.makeText(AdminLoginPage.this, "Enter a Email or Password", Toast.LENGTH_SHORT).show();
-                }else {
+                } else if (adminE == adminE ) {
+                    Toast.makeText(AdminLoginPage.this, "Email is incorrect!", Toast.LENGTH_SHORT).show();
+                } else if (adminP == adminP) {
+                    Toast.makeText(AdminLoginPage.this, "Password is incorrect!", Toast.LENGTH_SHORT).show();
+                } else if (adminP == adminP && adminE == adminE) {
+                    Toast.makeText(AdminLoginPage.this, "Both password and Email are incorrect!", Toast.LENGTH_SHORT).show();
+                } else {
                     auth.signInWithEmailAndPassword(adminE,adminP).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {

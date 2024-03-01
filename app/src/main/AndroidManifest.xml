@@ -15,6 +15,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".UserMenuPage"
+            android:exported="false" />
+        <activity
+            android:name=".UserWelcomePage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProductsInserts"
+            android:exported="false" />
+        <activity
             android:name=".EditItemsPage"
             android:exported="false" />
         <activity

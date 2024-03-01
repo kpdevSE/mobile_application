@@ -54,7 +54,6 @@ public class AdminInsertproducts extends AppCompatActivity {
         setContentView(R.layout.activity_admin_insertproducts);
 
         btnInsert = (Button) findViewById(R.id.submitData);
-        upImageBtn = (ImageView) findViewById(R.id.upImage);
         viewDataBtn = (Button) findViewById(R.id.viewData);
         fName = (EditText) findViewById(R.id.name);
         fDescription = (EditText) findViewById(R.id.description);
